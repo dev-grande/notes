@@ -8,7 +8,8 @@
 
 <details><summary>**Answer**</summary><p>
 
-React is well known for its ease of use, reusability, and modularity as your code base grows.   
+React is well known for its ease of use, reusability, and modularity as your code base grows. 
+  
 **PROS**
 - Create reusable UI components
 - Easy to learn; It combines the use of HTML and Javascript
@@ -27,7 +28,6 @@ React is well known for its ease of use, reusability, and modularity as your cod
 * why use redux? when to use it / when not to use it?
 
 <details><summary>**Answer**</summary><p>
-across compoments.
 
 Redux is a useful state management tool that makes it easier to mangage the state of your application with the ease of accessing and updating the state globally vs. locally for each component.  This removes the complications of passing the state up and down between compoments. 
 
@@ -37,6 +37,6 @@ Redux is a useful state management tool that makes it easier to mangage the stat
 
 *When not to use it?*
 - Barely any data is not being passed between components.
-- If you already have a predefined way of sharing and arranging the state
+- If you already have a predefined way of sharing and arranging the state across compoments.
 
 </p></details>
