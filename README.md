@@ -52,6 +52,7 @@ $ docker volume prune -f
 
 ```shell
 $ docker-compose up -d
+```
 
 ---
 
