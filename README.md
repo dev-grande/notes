@@ -48,6 +48,11 @@ $ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
 $ docker volume prune -f
 ```
 
+> To run the application once again, run the following command in the /backend/db directory to create and start the container with the Docker application.
+
+```shell
+$ docker-compose up -d
+
 ---
 
 
