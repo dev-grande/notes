@@ -1,4 +1,55 @@
-# notes
+# PSQL database - Docker
+## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+
+---
+
+## Installation
+
+> https://www.postgresql.org/download/
+
+- Follow the PSQL download instructions for your machine.
+
+> https://www.docker.com/get-started
+
+- Create a Docker account.
+- Download Docker for Desktop for your corresponding machine.
+- Once the download is finished sign in with your credentials made in step 1.
+
+### Clone
+
+- Clone the following repo to your local machine using `https://https://github.com/invest-io/backend`
+
+### Setup
+
+> In the /backend/db directory run the following command to create and start the container with the Docker application.
+
+```shell
+$ docker-compose up -d
+```
+
+---
+
+## Usage
+
+> After set up, you can now log into the psql server which should be mapped to PORT 5432 on your machine with the following command.
+
+```shell
+$ export PGPASSWORD='test_password'; psql -h localhost -p 5432 -U test_user -d investio
+```
+
+
+> To stop and clear the Docker application and container use the following commands in the /backend/db directory. 
+
+```shell
+$ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+$ docker volume prune -f
+```
+
+---
+
 
 ## frontend
 
